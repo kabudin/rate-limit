@@ -19,10 +19,7 @@
     "hyperf/redis": "^3.1"
   },
   "suggest": {},
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "config": {
-    "optimize-autoloader": true,
     "sort-packages": true
   },
   "extra": {
