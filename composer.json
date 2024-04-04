@@ -1,0 +1,32 @@
+{
+  "name": "bud/rate-limit",
+  "description": "Redis based rate limiter in the hyperf framework",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "hyperf",
+    "rate-limit"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bud\\RateLimit\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "hyperf/di": "^3.1",
+    "hyperf/redis": "^3.1"
+  },
+  "suggest": {},
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Bud\\RateLimit\\ConfigProvider"
+    }
+  }
+}
