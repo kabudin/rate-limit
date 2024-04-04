@@ -19,13 +19,13 @@
     "hyperf/redis": "^3.1"
   },
   "suggest": {},
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "config": {
-    "optimize-autoloader": true,
     "sort-packages": true
   },
   "extra": {
+    "branch-alias": {
+      "dev-master": "3.1-dev"
+    },
     "hyperf": {
       "config": "Zeno\\RateLimit\\ConfigProvider"
     }
