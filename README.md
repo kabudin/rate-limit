@@ -26,45 +26,32 @@ use Bud\RateLimit\Annotation\RateLimitAnnotation;
 class TestController
 {
     /**
-     * 五秒内仅允许请求一次
+     * 20秒内仅允许请求一次
      */
-    #[RateLimitAnnotation('test', 1, 5)]
+    #[RequestMapping(path: "", methods: "get"),RateLimitAnnotation('test', 20, 1)]
     public function index()
     {
         return [
-            'name' => 'rate-limit_annotation'
+            'key' => 'rate_limit:App\Controller\IndexController:index:test'
         ];
     }
+
     /**
-     * 同id的记录一分钟仅允许修改一次
+     * 相同路径参数一分钟仅允许访问一次
      */
-    #[RateLimitAnnotation('test:{id}', 1, 60)]
-    public function update(int $id)
+    #[RequestMapping(path: "{id}", methods: "get"),RateLimitAnnotation('test:{id}', 60, 1)]
+    public function info(int $id)
     {
         return [
-            'name' => 'rate-limit_annotation'
+            'key' => "rate_limit:App\Controller\IndexController:info:test:$id"
         ];
-    }
-     
-    public function search(RequestInterface $request)
-    {
-        return $this->getList($request->query());
-    }
-    
-    /**
-     * 根据请求参数中的name字段值进行限流，当第一参数中存在占位符时第四参数无效
-     */
-     #[RateLimitAnnotation('name', 1, 60, '{data}')]
-    protected function getList(array $data)
-    {
-        return $data;
     }
 }
 ```
 
 ## 静态方法使用
 
-```
+```php
     /**
      * @param string $key 限流键
      * @param int $unit_time 单位时间 默认1分钟
