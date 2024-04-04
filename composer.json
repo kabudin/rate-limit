@@ -1,5 +1,5 @@
 {
-  "name": "bud/rate-limit",
+  "name": "zeno/rate-limit",
   "description": "Redis based rate limiter in the hyperf framework",
   "type": "library",
   "license": "MIT",
