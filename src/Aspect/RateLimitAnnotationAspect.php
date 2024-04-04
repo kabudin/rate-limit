@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Bud\RateLimit\Aspect;
+namespace Zeno\RateLimit\Aspect;
 
-use Bud\RateLimit\Annotation\RateLimitAnnotation;
-use Bud\RateLimit\RateLimit;
+use Zeno\RateLimit\Annotation\RateLimitAnnotation;
+use Zeno\RateLimit\RateLimit;
 use Hyperf\Di\Aop\AbstractAspect;
 use Hyperf\Di\Aop\ProceedingJoinPoint;
-use Bud\RateLimit\Exception\ReteLimitException;
+use Zeno\RateLimit\Exception\ReteLimitException;
 use Hyperf\Di\ReflectionManager;
 use function Hyperf\Support\make;
 

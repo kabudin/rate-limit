@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Bud\\RateLimit\\": "src/"
+      "Zeno\\RateLimit\\": "src/"
     }
   },
   "require": {
@@ -26,7 +26,7 @@
   },
   "extra": {
     "hyperf": {
-      "config": "Bud\\RateLimit\\ConfigProvider"
+      "config": "Zeno\\RateLimit\\ConfigProvider"
     }
   }
 }
