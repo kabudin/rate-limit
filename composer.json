@@ -26,6 +26,9 @@
     "sort-packages": true
   },
   "extra": {
+    "branch-alias": {
+      "dev-master": "3.1-dev"
+    },
     "hyperf": {
       "config": "Zeno\\RateLimit\\ConfigProvider"
     }
