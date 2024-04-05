@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-composer require Zeno/rate-limit
+composer require zeno/rate-limit
 ```
 
 ## 注解使用
@@ -54,8 +54,8 @@ class TestController
 ```php
     /**
      * @param string $key 限流键
-     * @param int $unit_time 单位时间 默认1分钟
-     * @param int $max_number 最大访问次数 默认60次，即一秒一次
+     * @param int $unit_time 单位时间(秒)默认(60)秒
+     * @param int $max_number 最大访问次数默认60次，即一秒一次
     */
     \Zeno\RateLimit\RateLimit::checkLimit(string $key, int $unit_time = 60, int $max_number = 60)
 ```
