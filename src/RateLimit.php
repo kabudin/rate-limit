@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Zeno\RateLimit;
+namespace Bud\RateLimit;
 
-use Zeno\RateLimit\Aspect\RateLimitAnnotationAspect;
-use Zeno\RateLimit\Exception\ReteLimitException;
+use Bud\RateLimit\Aspect\RateLimitAnnotationAspect;
+use Bud\RateLimit\Exception\ReteLimitException;
 use Hyperf\Context\ApplicationContext;
 
 class RateLimit

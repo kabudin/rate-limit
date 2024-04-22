@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-composer require zeno/rate-limit
+composer require bud/rate-limit
 ```
 
 ## 注解使用
@@ -20,7 +20,7 @@ namespace App\Controller;
 
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Annotation\AutoController;
-use Zeno\RateLimit\Annotation\RateLimitAnnotation;
+use Bud\RateLimit\Annotation\RateLimitAnnotation;
 
 #[AutoController(prefix: "test")]
 class TestController
