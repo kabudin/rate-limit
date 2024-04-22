@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Zeno\RateLimit;
+namespace Bud\RateLimit;
 
 
-use Zeno\RateLimit\Aspect\RateLimitAnnotationAspect;
+use Bud\RateLimit\Aspect\RateLimitAnnotationAspect;
 
 class ConfigProvider
 {

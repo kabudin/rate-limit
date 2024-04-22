@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Zeno\RateLimit\Annotation;
+namespace Bud\RateLimit\Annotation;
 
 use Attribute;
 use Hyperf\Di\Annotation\AbstractAnnotation;
